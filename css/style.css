@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box !important;
+}
+
+body {
+    margin: 0px;
+}
+
+.navbar {
+    background-color: white;
+    height: 100px;
+    border-bottom: 2px solid whitesmoke;
+    padding: 40px 30px 40px 50px;
+    position: sticky;
+    top: 0px;
+    z-index: 10000;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: gray;
+}
+
+.brand-name {
+    font-family: 'Geneva';
+    font-size: 40px;
+    padding-right: 200px;
+}
+
+.links {
+    padding-right: 40px;
+}
+
+.sign-in {
+    background: gray;
+    color: white !important;
+    padding-left: 30px;
+}
+
+.display-section img {
+    max-width: 100%;
+    position: relative;
+}
+
+.shop-soils {
+    background: gray;
+    color: white;
+    width: 15%;
+    height: 50px;
+    position: absolute;
+    top: 200px;
+}
+
+.display-section span img {
+    width: 40px;
+}
+
+.newsletter {
+    height: 250px;
+    background-color: white;
+    padding: 40px 0px 0px 40px;
+    text-align: center;
+    border-bottom: 1px solid blue;
+}
+
+.why-opus {
+    height: 600px;
+    background-image: url(../images/gardening-690940.jpg);
+    
+}
+
+.why-opus img {
+    max-width: 100%;
+}
+
+.pitch {
+    height: 300px;
+    background: lime;
+    color: white;
+    text-align: center;
+    padding: 50px 300px 0px 300px;
+}
+
+.different-categories {
+    display: inline-flex;
+    height: 250px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.home-category {
+    width: 50%;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.wholesale-category {
+    width: 50%;
+    padding-right: 100px;
+    padding-left: 100px;
+}
