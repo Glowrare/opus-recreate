@@ -23,12 +23,17 @@ body {
 
 .navbar {
     background-color: white;
-    height: 100px;
     border-bottom: 2px solid whitesmoke;
-    padding: 10px 30px 0px 50px;
     position: sticky;
     top: 0px;
     z-index: 10000;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
 }
 
 .navbar a {
@@ -39,21 +44,17 @@ body {
 .brand-name {
     font-family: 'Anton', sans-serif;
     font-size: 40px;
-    padding-right: 200px;
-    padding-top: 50px;
 }
 
 .links {
-    padding-right: 40px;
-    padding-top: 40px;
+    padding: 15px;
     font-family: 'Source Code Pro', monospace;
 }
 
 .links .sign-in {
     background: gray;
-    color: white !important;
-    padding-left: 30px;
-    padding-bottom: 40px;
+    color: white;
+    padding: 42px;
 }
 
 button {
