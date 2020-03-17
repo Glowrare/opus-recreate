@@ -1,3 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Alfa+Slab+One|Anton|Fjalla+One|Source+Code+Pro&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700&display=swap');
+
 *{
     box-sizing: border-box !important;
 }
@@ -10,7 +15,7 @@ body {
     background-color: white;
     height: 100px;
     border-bottom: 2px solid whitesmoke;
-    padding: 40px 30px 40px 50px;
+    padding: 10px 30px 0px 50px;
     position: sticky;
     top: 0px;
     z-index: 10000;
@@ -22,19 +27,39 @@ body {
 }
 
 .brand-name {
-    font-family: 'Geneva';
+    font-family: 'Anton', sans-serif;
     font-size: 40px;
     padding-right: 200px;
+    padding-top: 50px;
 }
 
 .links {
     padding-right: 40px;
+    padding-top: 40px;
+    font-family: 'Source Code Pro', monospace;
 }
 
-.sign-in {
+.links .sign-in {
     background: gray;
     color: white !important;
     padding-left: 30px;
+    padding-bottom: 40px;
+}
+
+button {
+    
+    background-color: black;
+    border: none;
+    text-align: center;
+    height: 70px;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 25px;
+
 }
 
 .display-section img {
@@ -43,18 +68,19 @@ body {
 }
 
 .shop-soils {
-    background: gray;
     color: white;
-    width: 15%;
-    height: 50px;
     position: absolute;
-    top: 200px;
+    top: 500px;
+    left: 200px;
 }
 
-.display-section span img {
+.display-section .shop-soils img {
     width: 40px;
 }
 
+p {
+    font-family: 'Source Code Pro', monospace;
+}
 .newsletter {
     height: 250px;
     background-color: white;
@@ -75,7 +101,7 @@ body {
 
 .pitch {
     height: 300px;
-    background: lime;
+    background: rgb(190, 18, 84);
     color: white;
     text-align: center;
     padding: 50px 300px 0px 300px;
@@ -83,19 +109,72 @@ body {
 
 .different-categories {
     display: inline-flex;
-    height: 250px;
-    padding-top: 100px;
+    height: 350px;
     text-align: center;
 }
 
 .home-category {
+    background: rgb(218, 169, 205);
     width: 50%;
-    padding-right: 100px;
-    padding-left: 100px;
+    padding: 50px 100px 0px 100px;
 }
 
 .wholesale-category {
+    background: rgb(148, 168, 118);
     width: 50%;
-    padding-right: 100px;
-    padding-left: 100px;
+    padding: 50px 100px 0px 100px;
+}
+
+.ingredients {
+    height: 400px;
+    background-image: url(../images/wall-1217083_1920.jpg);
+    background-size: cover;
+    display: inline-flex;
+}
+
+.ingredient-housing {
+    width: 60%;
+}
+
+.ingredient-title {
+    display: inline-flex;
+}
+
+.pot-plant-icon {
+    width: 40%;
+}
+
+.icon-text {
+    width: 60%;
+    display: inline-block;
+}
+
+.ingredients .general-ingredient-layout .pot-plant-icon img {
+    height: 100px;
+}
+
+.specific-ingredient-image {
+    width: 40%;
+}
+
+.specific-ingredient-image img {
+    max-width: 100%;
+    height: 400px;
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    .shop-soils {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .shop-soils {
+        background-color: red;
+        position: absolute;
+    }
 }
