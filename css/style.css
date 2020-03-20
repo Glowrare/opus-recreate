@@ -19,6 +19,7 @@ body {
 
 .mild-expression {
     font-family: 'Enriqueta', serif;
+    font-size: 25px;
 }
 
 .navbar {
@@ -58,7 +59,6 @@ body {
 }
 
 button {
-    
     background-color: black;
     border: none;
     text-align: center;
@@ -70,18 +70,20 @@ button a {
     color: white;
     font-family: 'Source Serif Pro', serif;
     font-size: 25px;
-
 }
 
-.display-section img {
-    max-width: 100%;
+.display-section {
     position: relative;
+    height: 600px;
+    background-image: url(../images/cacti-1845159.jpg);
+    background-size: cover;   
 }
+
 
 .shop-soils {
     color: white;
     position: absolute;
-    top: 500px;
+    top: 250px;
     left: 200px;
 }
 
@@ -92,27 +94,40 @@ button a {
 p {
     font-family: 'Source Code Pro', monospace;
 }
+
 .newsletter {
     height: 250px;
     background-color: white;
-    padding: 40px 0px 0px 40px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     border-bottom: 1px solid blue;
+    line-height: 1rem;
+}
+
+.email-button {
+    padding: 12px;
+    background-color: grey;
+    border: none;
 }
 
 .why-opus {
     height: 600px;
-    background-image: url(../images/gardening-690940.jpg);
-    
+    background-image: url(../images/young-salad-5809.jpg);
+    background-size: cover;
 }
 
 .why-opus img {
     max-width: 100%;
 }
 
+#email-address {
+    padding: 10px 100px;
+}
 .pitch {
     height: 300px;
-    background: rgb(190, 18, 84);
+    background: rgb(102, 167, 40);
     color: white;
     text-align: center;
     padding: 50px 300px 0px 300px;
@@ -125,13 +140,13 @@ p {
 }
 
 .home-category {
-    background: rgb(218, 169, 205);
+    background: white;
     width: 50%;
     padding: 50px 100px 0px 100px;
 }
 
 .wholesale-category {
-    background: rgb(148, 168, 118);
+    background: #dbcfc1;
     width: 50%;
     padding: 50px 100px 0px 100px;
 }
@@ -144,7 +159,8 @@ p {
 }
 
 .ingredient-housing {
-    width: 60%;
+    width: 50%;
+    padding: 30px;
 }
 
 .ingredient-title {
@@ -152,12 +168,13 @@ p {
 }
 
 .pot-plant-icon {
-    width: 40%;
+    width: 20%;
 }
 
 .icon-text {
     width: 60%;
     display: inline-block;
+    line-height: 2rem;
 }
 
 .ingredients .general-ingredient-layout .pot-plant-icon img {
@@ -165,27 +182,102 @@ p {
 }
 
 .specific-ingredient-image {
-    width: 40%;
+    width: 50%;
+    background: url(../images/plant-164500.jpg) no-repeat;
+    background-size: cover;
 }
 
 .specific-ingredient-image img {
     max-width: 100%;
     height: 400px;
-    
+}
+
+.reduced-margin{
+    margin-top: -18px;
+}
+
+.footer {
+    height: auto;
+    background: rgb(148, 142, 142);
+    color: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .first {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer .first .foot-lists {
+    display: flex;
+    max-width: 400px;
+
+}
+
+.footer .first .foot-lists ul li {
+    list-style: none;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.footer .first .foot-lists ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.page-title-in-footer p {
+    font-family: 'Anton', sans-serif;
+    font-size: 50px;
+    line-height: 3rem;
+    margin: 0;
+}
+
+.page-title-in-footer p span {
+    letter-spacing: 0.6rem;
+    font-weight: bold;
+}
+
+.newsletter-sign-up p {
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 0.1rem;
+}
+
+.footer .first .foot-lists ul li a:hover {
+    color: rgb(204, 190, 190);
+}
+
+.footnote {
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-media-icons i {
+    color: white;
+    font-size: 30px;
+    padding: 20px;
 }
 
 
+/* Media Query */
 @media screen and (max-width: 768px) {
     .shop-soils {
         position: relative;
         top: 0;
         left: 0;
     }
+    .brand-name {
+   display: flex;
+   flex-direction: row;
+    }
 }
 
-@media screen and (max-width: 640px) {
+/* @media screen and (max-width: 640px) {
     .shop-soils {
         background-color: red;
         position: absolute;
     }
-}
+} */
